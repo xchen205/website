@@ -120,10 +120,4 @@ function removeColourLoversPalette(){
   document.getElementById("color-pic").src = "";
 }
 
-function initMap(){
-  var map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: 0.000, lng: 0.000},
-      zoom: 8
-    });
-}
 
