@@ -1,0 +1,263 @@
+body {
+  background-image: url("../images/ocean.png");
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 5px solid pink;
+  border-style: inset;
+  background-size: cover;
+  overflow-x: hidden;
+  background-attachment: fixed;
+}
+
+#header {
+  border-style: outset;
+  text-align: center;
+}
+
+#header ul {
+  list-style-type: none;
+  font-size: 2em;
+  text-align: center;
+  display: inline;
+  position: relative;
+  padding: 0;
+}
+
+#header ul li {
+  display: inline;
+  position: relative;
+  margin: 5px;
+}
+
+#header ul li a {
+  color: orange;
+  text-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+}
+
+#header ul li a:hover{
+  color: yellow;
+  text-shadow: 0.5em 0.5em 0.5em rgba(127, 127, 0, 0.25);
+}
+
+p, strong, ul, li {
+  color: lightblue;
+  text-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.25);
+  font-family: "Times New Roman", "Arial";
+}
+
+i a {
+  color: lightblue;
+  text-shadow: 0.5em 0.5em 0.5em rgba(192, 192, 255, 0.25);
+}
+
+p {
+  font-size: 1.5em;
+}
+
+ul, li {
+  font-size: 1em;
+}
+
+h1 {
+  font-family: "Audiowide", "Courier New";
+  color: white;
+  text-align: center;
+  text-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.25);
+  font-size: 3em;
+}
+
+h2, h3 {
+  color: pink;
+  text-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.25);
+  font-family: "Times New Roman", "Arial";
+  font-size: 2.25em;
+}
+
+h1:hover {
+  color: lightgray;
+}
+
+p:hover, ul:hover, li:hover, strong:hover {
+  color: skyblue;
+}
+
+h2:hover, h3:hover {
+  color: fuchsia;
+}
+
+div {
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0));
+  display: flow-root;
+}
+
+section {
+  opacity: 1;
+  border: 5px solid purple;
+  border-style: inset;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flow-root;
+}
+
+img, video {
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+@media (min-width: 600px){
+  body {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  p, ul {
+    font-size: 1em;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2, h3 {
+    font-size: 1.5em;
+  }
+}
+
+/*
+main page css
+*/
+
+#words section{
+  background-color: rgba(255, 127, 127, 0.5);
+}
+
+#thumbsup-pic {
+  border: 10px;
+  border-style: outset;
+  float: right;
+  padding: 0px;
+  margin: 5px;
+  width: 30%;
+  height: 30%;
+}
+
+#main-content {
+  background-image: url("../images/ocean.png");
+  background-size: cover;
+}
+
+@media (min-width: 600px){
+  #thumbsup-pic {
+    border: 20px;
+    border-style: outset;
+    padding: 10px;
+    margin: 10px;
+    width: 40%;
+    height: 40%;
+  }
+  
+  #main-content {
+     background-color: rgba(0, 0, 0, 0.25);
+  }
+}
+
+/*
+resume page css
+*/
+
+#resume-nav {
+  background-color: rgba(255, 255, 0, 0.5);
+}
+
+#resume-nav ul {
+  text-align: center;
+  list-style-type: none;
+  display: block;
+  position: relative;
+  padding: 0;
+}
+
+#resume-nav ul li {
+  display: inline;
+  position: relative;
+  margin: 5px;
+}
+
+#resume-nav ul li a{
+  font-size: 1.5em;
+  color: green;
+  text-decoration: none;
+}
+
+#resume-nav ul li a:hover {
+  font-size: 1.5em;
+  color: lime;
+  text-shadow: 0.5em 0.5em 0.5em rgba(127, 190, 127, 0.25);
+}
+
+#leadership {
+  background-color: rgba(127, 0, 0, 0.5);
+}
+
+/*
+stuff page css
+*/
+
+#apple-pic img, #hand-pic img {
+  border: 20px;
+  border-color: gray;
+  border-style: outset;
+  float: right;
+  margin: 10px;
+  max-width: 50%;
+}
+
+#the-video video {
+  float: right;
+  max-width: 50%;
+}
+
+#the-video p {
+  font-family: "Audiowide", "Courier New";
+  float: left;
+  margin: 10px;
+}
+
+#the-video:hover {
+  background-color: rgba(1,1,1,0);
+}
+
+#hand-pic {
+  display: block;
+}
+
+@media (min-width: 600px){
+  #apple-pic img, #hand-pic img {
+    max-width: 100%
+  }
+  
+  #the-video video {
+  max-width: 100%;
+}
+}
+/*
+apiuserpage page css
+*/
+
+section button {
+  margin: 5px;
+  display: inline-block;
+  background-image: linear-gradient(to left, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0));
+}
+
+#color-pic {
+  max-width: 60%;
+}
+
+#map {
+  width: 100%;
+  height: 500px;
+}
+
+#map div {
+  background-image: unset;
+}

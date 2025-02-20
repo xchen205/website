@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Project 3: Page that uses APIs</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script async src="js/script.js"></script>
+  </head>
+  
+  <body id="api-page">
+    <header id="header">
+      <h1>Navigation</h1>
+      <ul>
+        <li><a href="index.html">Main</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="stuff.html">Stuff</a></li>
+        <li><a href="apiuserpage.html">Page that uses APIs</a></li>
+      </ul>
+    </header>
+    <div id="cat-fact">
+      <section>
+        <p id="cat-text">🐶This is a placeholder for where the dog fact will go.🐶</p>
+        <br>
+        <button id="cat-button" type="button" onclick="getDogFact()">Click here for another dog fact</button>
+        <button id="cat-clear-button" type="button" onclick="removeCatFact()">Click here to clear the dog fact</button>
+      </section>
+    </div>
+    <div id="colors">
+      <section>
+        <img id="color-pic" src="" alt="a color">
+        <br>
+        <button id="color-button" type="button" onclick="getDogPic()">Click here for another dog pic</button>
+        <button id="color-clear-button" type="button" onclick="removeColourLoversPalette()">Click here to clear the dog pic</button>
+      </section>
+    </div>
+    <div id="map"></div>
+      <section>
+        <script>
+          var map;
+          function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+              center: {lat: 0.000, lng: 0.000},
+              zoom: 8
+            });
+          }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&loading=async&callback=initMap"
+        async defer></script>
+      </section>
+  </body>
+</html>
